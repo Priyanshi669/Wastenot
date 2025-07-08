@@ -5,6 +5,13 @@
 This digital platform enables real-time food posting, claiming, and tracking — helping bridge the gap between surplus and scarcity.
 
 ---
+## 🔍 Inspiration & Research
+
+We have extensively researched the issue of *edible food waste* and its impact on both the environment and food insecurity.  
+The name *“WasteNot”* is inspired by existing real-world initiatives and open-source efforts addressing similar challenges globally.  
+We’re building a simplified and localized version tailored to our hackathon use case.
+
+---
 
 ## 🚀 What We're Building
 
