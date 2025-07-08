@@ -38,7 +38,7 @@ Every day, tons of good food is thrown away. WasteNot provides a sustainable, so
 
 ---
 
-## 🧑‍💻 Team WasteNot
+## 🧑‍💻 Team Greenbridge
 
 | Member | Responsibility |
 |--------|----------------|
