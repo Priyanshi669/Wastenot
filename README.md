@@ -56,6 +56,32 @@ Every day, tons of good food is thrown away. WasteNot provides a sustainable, so
 
 ---
 
+ 💡 Problem Statement
+
+Millions of tons of edible food are wasted due to the lack of coordination between food donors and recipients.
+
+---
+
+## ✅ Proposed Solution
+
+Build a simple platform where donors can create accounts and eventually post food details — enabling NGOs or receivers to claim surplus food.
+
+---
+You can now:
+
+* Register a donor
+* Log in securely
+* View homepage and About Us
+
+---
+
+## 📌 Future Scope
+
+* Donor-Food Listings
+* Receiver-side Login & Listings View
+* Admin Panel & Analytics
+* Google Maps API for pickup location
+
 > 📌 This repo will be updated continuously throughout the hackathon.
 
 Stay tuned as we build WasteNot — a step toward zero food waste! 💚
