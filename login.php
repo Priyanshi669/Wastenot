@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      background-image: url('images/bg.jpg'); /* 🔄 Replace with your image path */
+     
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
