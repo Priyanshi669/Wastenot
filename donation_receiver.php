@@ -1,4 +1,4 @@
-<!-- receiver_donate.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
