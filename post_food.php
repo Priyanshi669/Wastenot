@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "includes/auth_check.php"; // Session check
-require_once "includes/db.php";         // DB connection
+require_once "includes/auth_check.php"; 
+require_once "includes/db.php";         
 
 $success = "";
 $errors = [];
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $expiry = $_POST["expiry"];
 
     if ($food_name && $quantity && $location && $contact && $expiry) {
-        // Insert into foodentry table (based on your database screenshot)
+        
         $stmt = $conn->prepare("INSERT INTO foodentry (food_name, quantity, location, contact, expiry) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $food_name, $quantity, $location, $contact, $expiry);
 
