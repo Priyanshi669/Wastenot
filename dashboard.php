@@ -77,7 +77,7 @@ $role = $_SESSION["role"] ?? "Guest";
           datasets: [{
             label: 'Meals',
             data: [data.claimed, data.unclaimed],
-            backgroundColor: ['#2196f3', '#f44336'], 
+            backgroundColor: ['#2196f3', '#f44336'], // blue, red
             borderColor: ['#ffffff'],
             borderWidth: 1
           }]
@@ -94,6 +94,7 @@ $role = $_SESSION["role"] ?? "Guest";
       });
     });
 </script>
+
 
 
 </body>
