@@ -7,7 +7,7 @@ This digital platform enables real-time food posting, claiming, and tracking —
 ---
 # 🎥 Demo Video
 
-[![Watch the Demo](https://github.com/user-attachments/assets/1613d1de-ba7b-4b2f-94a9-b4e1a725b267x)
+[![Watch the Demo](https://youtu.be/IhZZDKMzh0k)
 
 ## 🔍 Inspiration & Research
 
