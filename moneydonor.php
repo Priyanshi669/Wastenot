@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <input type="hidden" name="role" value="Donor">
     <button type="submit" class="btn btn-success w-100">Register</button>
-    <p class="mt-3 text-center small">Already registered? <a href="moneylogin.php">Login here</a></p>
+    <p class="mt-3 text-center small">Already registered? <a href="donation_donor.php">Login here</a></p>
   </form>
 </div>
 </body>
