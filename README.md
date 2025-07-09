@@ -67,6 +67,50 @@ Millions of tons of edible food are wasted due to the lack of coordination betwe
 Build a simple platform where donors can create accounts and eventually post food details — enabling NGOs or receivers to claim surplus food.
 
 ---
+## ⚙ How to Run WasteNot with XAMPP (after extracting)
+
+### ✅ 1. Download & Set Up XAMPP
+
+- Download from [https://www.apachefriends.org](https://www.apachefriends.org)
+- Start **Apache** and **MySQL** from the XAMPP control panel
+
+### ✅ 2. Move Project to `htdocs`
+
+- Move your extracted folder (e.g wastenot`) to:
+
+
+
+C:\xampp\htdocs\wastenot
+
+`
+
+### ✅ 3. Create Database
+
+- Open: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+- Click **Import**, then select and upload the `schema.sql` file provided
+- A new database will be created (e.g., 'donorpage')
+  ### ✅ 4. Configure `db.php`
+
+Edit `includes/db.php` as follows:
+
+php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "donorpage"
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+`
+
+### ✅ 5. Run the Project in Browser
+
+Open:
+
+
+http://localhost/wastenot
+
 You can now:
 
 * Register a donor
@@ -81,6 +125,14 @@ You can now:
 * Receiver-side Login & Listings View
 * Admin Panel & Analytics
 * Google Maps API for pickup location
+
+---
+## 📢 Credits
+
+* Built by Team WasteNot for \[Hackathon Name]
+* PHP and SQL by Member 3
+* UI by Member 1
+
 
 > 📌 This repo will be updated continuously throughout the hackathon.
 
