@@ -30,8 +30,10 @@ $role = $_SESSION["role"] ?? "Guest";
 <body class="bg-light">
 
 <nav class="navbar navbar-expand-lg bg-white px-4 shadow-sm">
+  <img src="logo.png" alt="Logo" style="height: 100px; width: auto; object-fit: contain; margin-bottom: -10px;">
+
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">🍱 Food Exchange</a>
+    <a class="navbar-brand fw-bold" >Food Exchange</a>
     <div class="d-flex align-items-center">
       <span class="me-3">Hello, <?= htmlspecialchars($name) ?> (<?= ucfirst($role) ?>)</span>
       <a href="logout.php" class="btn btn-outline-danger btn-sm">Logout</a>
