@@ -72,6 +72,8 @@ if (isset($_SESSION['user_id'])) {
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
           <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+           <li class="nav-item"><a class="nav-link" href="donation.php">Donate Money</a></li>
+
         </ul>
       </div>
     </div>
@@ -81,7 +83,7 @@ if (isset($_SESSION['user_id'])) {
   <div class="container mt-5">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0 text-center">
-        <img src="logo.png" alt="Logo" style="height: 160px; width: auto; object-fit: contain; margin-bottom: -10px;">
+        <img src="logo.png" alt="Logo.png" style="height: 160px; width: auto; object-fit: contain; margin-bottom: -10px;">
 
         <h1 class="display-5 fw-semibold mt-3">Turn Surplus Food into Smiles</h1>
         <p class="lead mb-4">
