@@ -5,9 +5,7 @@
 This digital platform enables real-time food posting, claiming, and tracking — helping bridge the gap between surplus and scarcity.
 
 ---
-# 🎥 Demo Video
 
-[![Watch the Demo](https://youtu.be/IhZZDKMzh0k)
 
 ## 🔍 Inspiration & Research
 
