@@ -6,8 +6,8 @@ if (!isset($_SESSION["user_id"])) {
     exit;
 }
 
-require_once "includes/auth_check.php"; // Session check
-require_once "includes/db.php"; // DB connection
+require_once "includes/auth_check.php"; 
+require_once "includes/db.php"; 
 
 $success = "";
 $errors = [];
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
       <?php endif; ?>
 
-      <!-- ✅ YOUR TASK: Frontend form -->
+    
       <form method="POST" action="post_food.php">
         <div class="mb-3">
           <label>Food Name</label>
