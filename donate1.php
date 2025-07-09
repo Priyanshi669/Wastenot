@@ -26,53 +26,102 @@ $percentage = ($row['goal_amount'] > 0) ? ($row['amount_raised'] / $row['goal_am
   <title><?= htmlspecialchars($row['name']) ?> | WasteNot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-  body {
-    background-color: #f3f3f3;
-    font-family: 'Segoe UI', sans-serif;
-  }
+    body {
+      background: linear-gradient(to bottom right,rgba(118, 223, 127, 0.85),rgb(74, 90, 105));
+      font-family: 'Segoe UI', sans-serif;
+      color: #2e3b3f;
+    }
 
-  .ngo-container {
-    max-width: 1000px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  }
+    .ngo-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
 
-  .section-box, .donation-box {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
+    .section-box, .donation-box {
+      background: #f7fdfc;
+      border: 1px solid #d3e8e1;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
 
-  .section-box:hover, .donation-box:hover {
-    background-color: #fff9c4; /* light yellow */
-    transform: scale(1.02);
-  }
+    .section-box:hover, .donation-box:hover {
+      background-color: #fffde7;
+      transform: scale(1.015);
+    }
 
-  .title-bold {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #333;
-  }
+    .title-bold {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1b5e20;
+    }
 
-  .btn-donate {
-    width: 100%;
-  }
+    .img-thumbnail {
+      width: 100%;
+      max-height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
 
-  .img-thumbnail {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-</style>
+    .btn-donate {
+      width: 100%;
+      font-weight: 600;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .custom-donate-btn {
+      background-color: #a5d6a7;
+      border: none;
+      color: #154734;
+    }
+
+    .custom-donate-btn:hover {
+      background-color: #66bb6a;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #d7ccc8;
+      color: #3e2723;
+    }
+
+    .btn-secondary:hover {
+      background-color: #a1887f;
+      color: white;
+    }
+
+    .progress {
+      height: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      background-color: #388e3c;
+      border-radius: 5px;
+    }
+
+    h6 {
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.6rem;
+    }
+  </style>
 </head>
-<body style="background-color:#fff9c4;">
+<body>
 
 <div class="ngo-container">
   <div class="section-box">
@@ -83,8 +132,7 @@ $percentage = ($row['goal_amount'] > 0) ? ($row['amount_raised'] / $row['goal_am
   <div class="row">
     <div class="col-md-6 section-box">
       <h6>Photos or Videos</h6>
-      <img src="<?= htmlspecialchars($row['image_url'] ?:
-       'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') ?>" class="img-thumbnail" alt="NGO">
+      <img src="<?= htmlspecialchars($row['image_url'] ?: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6') ?>" class="img-thumbnail" alt="NGO Image">
     </div>
     <div class="col-md-6 section-box">
       <h6>News Update</h6>
@@ -99,12 +147,13 @@ $percentage = ($row['goal_amount'] > 0) ? ($row['amount_raised'] / $row['goal_am
     </div>
     <div class="col-md-4">
       <div class="donation-box mb-3">
-        <p><strong>₹<?= $row['amount_raised'] ?: 0 ?></strong> raised of ₹<?= $row['goal_amount'] ?> goal</p>
-        <div class="progress" style="height: 6px;">
-          <div class="progress-bar bg-success" style="width: <?= min(100, $percentage) ?>%"></div>
+        <p><strong>₹<?= number_format($row['amount_raised'] ?: 0) ?></strong> raised of ₹<?= number_format($row['goal_amount']) ?> goal</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: <?= min(100, $percentage) ?>%"></div>
         </div>
       </div>
-<a href="paymentdonate.php" class="btn btn-success btn-donate custom-donate-btn">Donate Now</a>
+      <a href="paymentdonate.php" class="btn btn-donate custom-donate-btn mb-2">Donate Now</a>
+      <a href="donaton_donor.php" class="btn btn-donate btn-secondary">Go Back</a>
     </div>
   </div>
 </div>
