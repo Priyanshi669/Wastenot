@@ -2,6 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: moneylogin.php");
+header("Location: donation.php");
 exit;
 ?>
