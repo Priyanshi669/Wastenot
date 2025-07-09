@@ -111,7 +111,7 @@
   
   <div class="role-section">
     
-    <div class="role-half donor" onclick="window.location.href='register.php?role=Donor'">
+    <div class="role-half donor" onclick="window.location.href='moneydonor.php'">
       <div class="overlay-content">
         <i class="bi bi-heart-fill"></i>
         <h2>Be a Donor</h2>
@@ -121,7 +121,7 @@
     </div>
 
   
-    <div class="role-half receiver" onclick="window.location.href='register.php?role=Receiver'">
+    <div class="role-half receiver" onclick="window.location.href='moneyreceiver.php'">
       <div class="overlay-content">
         <i class="bi bi-hand-index-thumb-fill"></i>
         <h2>Be a Receiver</h2>
