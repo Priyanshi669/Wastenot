@@ -5,6 +5,10 @@
 This digital platform enables real-time food posting, claiming, and tracking — helping bridge the gap between surplus and scarcity.
 
 ---
+# 🎥 Demo Video
+
+[![Watch the Demo](https://github.com/user-attachments/assets/1613d1de-ba7b-4b2f-94a9-b4e1a725b267x)
+
 ## 🔍 Inspiration & Research
 
 We have extensively researched the issue of *edible food waste* and its impact on both the environment and food insecurity.  
@@ -136,12 +140,10 @@ You can now:
 
 ---
 
-## 📌 Future Scope
-
-* Donor-Food Listings
-* Receiver-side Login & Listings View
+## Future Scope
 * Admin Panel & Analytics
 * Google Maps API for pickup location
+* Not beyond to food only 
 
 ---
 ## 📢 Credits
@@ -151,6 +153,6 @@ You can now:
 * UI by Member 1
 
 
-> 📌 This repo will be updated continuously throughout the hackathon.
+> 📌 This repo is finally uploaded completely along with demo video
 
 Stay tuned as we build WasteNot — a step toward zero food waste! 💚
