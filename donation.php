@@ -19,7 +19,7 @@
       height: 100vh;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 56px; /* navbar height offset */
+      margin-top: 56px; 
     }
 
     .role-half {
@@ -92,7 +92,7 @@
 </head>
 <body>
 
-  <!-- 🔷 Navbar -->
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-success" href="#">Money Donation</a>
@@ -108,9 +108,9 @@
     </div>
   </nav>
 
-  <!-- 🔶 Donation Options -->
+  
   <div class="role-section">
-    <!-- Donor Side -->
+    
     <div class="role-half donor" onclick="window.location.href='register.php?role=Donor'">
       <div class="overlay-content">
         <i class="bi bi-heart-fill"></i>
@@ -120,7 +120,7 @@
       </div>
     </div>
 
-    <!-- Receiver Side -->
+  
     <div class="role-half receiver" onclick="window.location.href='register.php?role=Receiver'">
       <div class="overlay-content">
         <i class="bi bi-hand-index-thumb-fill"></i>
