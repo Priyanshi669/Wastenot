@@ -1,4 +1,5 @@
-<?php include 'header.php'; ?>
+<?php 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +50,6 @@
     <div class="upi-box">
       <h6 class="text-success">Pay via UPI</h6>
       <p><strong>UPI ID:</strong> gracefoundation@upi</p>
-      <img src="https://via.placeholder.com/150?text=UPI+QR" alt="QR Code" class="img-thumbnail" style="width: 150px;">
     </div>
 
     <div class="bank-box">
