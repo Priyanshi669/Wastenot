@@ -11,10 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = "Receiver";
 
     if ($name && $phone) {
-        $stmt = $conn->prepare("INSERT INTO money (`Your Name`, `iden`, `Phone Number`) VALUES (?, ?, ?)");
-        $stmt->bind_param("ssi", $name, $role, $phone);
+        
+$stmt = $conn->prepare("INSERT INTO money (`Your Name`, `iden`, `Phone Number`) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $name, $role, $phone);
+
         if ($stmt->execute()) {
-            $success = "Donor registered successfully!";
+            $success = "Receiver registered successfully!";
         } else {
             $errors[] = "Failed to register.";
         }
@@ -67,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <input type="hidden" name="role" value="Receiver">
     <button type="submit" class="btn btn-success w-100" style="background-color: rgb(197, 50, 50);">Register</button>
-    <p class="mt-3 text-center small">Already registered? <a href="donation_receiver.ph">Login here</a></p>
+    <p class="mt-3 text-center small">Already registered? <a href="moneylogin.php">Login here</a></p>
   </form>
 </div>
 </body>
