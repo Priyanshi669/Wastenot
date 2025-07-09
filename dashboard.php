@@ -29,7 +29,6 @@ $role = $_SESSION["role"] ?? "Guest";
 </head>
 <body class="bg-light">
 
-
 <nav class="navbar navbar-expand-lg bg-white px-4 shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="#">🍱 Food Exchange</a>
@@ -39,7 +38,6 @@ $role = $_SESSION["role"] ?? "Guest";
     </div>
   </div>
 </nav>
-
 
 <div class="container mt-5 text-center">
   <h3>Welcome to your dashboard</h3>
@@ -52,7 +50,6 @@ $role = $_SESSION["role"] ?? "Guest";
   <?php endif; ?>
 </div>
 
-
 <div class="container mt-5">
   <h4 class="mb-3 text-center">📊 Impact Overview</h4>
   <div class="card shadow-sm p-4">
@@ -62,11 +59,9 @@ $role = $_SESSION["role"] ?? "Guest";
   </div>
 </div>
 
-
 <footer class="bg-dark text-white text-center py-3 mt-5">
   <div>&copy; <?= date('Y') ?> Food Waste Exchange | Built with ❤️</div>
 </footer>
-
 
 <script>
   fetch("chart_data.php")
@@ -76,11 +71,11 @@ $role = $_SESSION["role"] ?? "Guest";
       new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Posted', 'Claimed', 'Unclaimed'],
+          labels: ['Claimed', 'Unclaimed'],
           datasets: [{
             label: 'Meals',
-            data: [data.total, data.claimed, data.unclaimed],
-            backgroundColor: ['#4caf50', '#2196f3', '#f44336'],
+            data: [data.claimed, data.unclaimed],
+            backgroundColor: ['#2196f3', '#f44336'], 
             borderColor: ['#ffffff'],
             borderWidth: 1
           }]
@@ -90,13 +85,14 @@ $role = $_SESSION["role"] ?? "Guest";
             legend: { position: 'bottom' },
             title: {
               display: true,
-              text: 'Total Food Activity'
+              text: 'Claimed vs Unclaimed Meals'
             }
           }
         }
       });
     });
 </script>
+
 
 </body>
 </html>
