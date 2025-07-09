@@ -19,7 +19,7 @@
       height: 100vh;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 56px; 
+      margin-top: 56px; /* navbar height offset */
     }
 
     .role-half {
@@ -92,10 +92,10 @@
 </head>
 <body>
 
-  
+  <!-- 🔷 Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-success" href="#">Money Donation</a>
+      <a class="navbar-brand fw-bold text-success">Money Donation</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -108,9 +108,7 @@
     </div>
   </nav>
 
-  
   <div class="role-section">
-    
     <div class="role-half donor" onclick="window.location.href='moneydonor.php'">
       <div class="overlay-content">
         <i class="bi bi-heart-fill"></i>
@@ -120,7 +118,6 @@
       </div>
     </div>
 
-  
     <div class="role-half receiver" onclick="window.location.href='moneyreceiver.php'">
       <div class="overlay-content">
         <i class="bi bi-hand-index-thumb-fill"></i>
