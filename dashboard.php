@@ -29,7 +29,7 @@ $role = $_SESSION["role"] ?? "Guest";
 </head>
 <body class="bg-light">
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg bg-white px-4 shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="#">🍱 Food Exchange</a>
@@ -40,7 +40,7 @@ $role = $_SESSION["role"] ?? "Guest";
   </div>
 </nav>
 
-<!-- Dashboard Content -->
+
 <div class="container mt-5 text-center">
   <h3>Welcome to your dashboard</h3>
   <p class="text-muted">Use the options below to manage food sharing.</p>
@@ -52,7 +52,7 @@ $role = $_SESSION["role"] ?? "Guest";
   <?php endif; ?>
 </div>
 
-<!-- Impact Chart -->
+
 <div class="container mt-5">
   <h4 class="mb-3 text-center">📊 Impact Overview</h4>
   <div class="card shadow-sm p-4">
@@ -62,12 +62,12 @@ $role = $_SESSION["role"] ?? "Guest";
   </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="bg-dark text-white text-center py-3 mt-5">
   <div>&copy; <?= date('Y') ?> Food Waste Exchange | Built with ❤️</div>
 </footer>
 
-<!-- Chart JS -->
+
 <script>
   fetch("chart_data.php")
     .then(res => res.json())
